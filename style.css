@@ -1,0 +1,276 @@
+body {
+    margin-top: 100px;
+}
+
+.title {
+    margin: auto;
+    width: 700px;
+    text-align: center;
+}
+
+.game-box {
+    width: 850px;
+    height: 700px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.game {
+    width: 700px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: auto;
+    position: relative;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(dino.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(cactus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactusMov 4s infinite linear;
+}
+
+#firstletter {
+    width: 20px;
+    height: 40px;
+    background-image: url(rets.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: firstMov 3s infinite linear;
+}
+
+#secondletter {
+    width: 20px;
+    height: 40px;
+    background-image: url(cbxc.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 400px;
+    animation: secondMov 2s infinite linear;
+}
+
+#thirdletter {
+    width: 20px;
+    height: 40px;
+    background-image: url(ghjk.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 480px;
+    animation: thirdMov 3s infinite linear;
+}
+
+#fourthletter {
+    width: 20px;
+    height: 40px;
+    background-image: url(dfgh.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 480px;
+    animation: fourthMov 4.4s infinite linear;
+}
+
+#fifthletter {
+    width: 20px;
+    height: 40px;
+    background-image: url(cbxg.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 480px;
+    animation: fifthMov 2.5s infinite linear;
+}
+
+#pngeg {
+    width: 30px;
+    height: 30px;
+    background-image: url(pngeg.png);
+    background-size: 30px 30px;
+    position: relative;
+    top: 110px;
+    left: 330px;
+    animation: fifthMov 0s infinite linear;
+}
+
+#item {
+    width: 30px;
+    height: 40px;
+    background-image: url(.png);
+    background-size: 30px 40px;
+    position: relative;
+    top: 110px;
+    left: 480px;
+    color: rgb(52, 52, 214);
+    font-size: 24px;
+    font-weight: bold;
+    animation: fifthMov 4.5s infinite linear;
+}
+
+#face {
+    width: 30px;
+    height: 30px;
+    background-image: url(pngegg.png);
+    background-size: 30px 30px;
+    position: relative;
+    top: 110px;
+    left: 330px;
+    font-size: 2px;
+    animation: fifthMov 0s infinite linear;
+}
+
+#divplus {
+    width: 30px;
+    height: 50px;
+    background-image: url(.png);
+    background-size: 30px 40px;
+    position: relative;
+    top: 110px;
+    left: 480px;
+    font-size: 24px;
+    font-weight: bold;
+    animation: fifthMov 4s infinite linear;
+}
+
+#textdiv {
+    width: 30px;
+    height: 40px;
+    background-image: url(.png);
+    background-size: 30px 40px;
+    position: relative;
+    top: 60px;
+    left: 480px;
+    font-size: 20px;
+    line-height: 1;
+    animation: fifthMov 3s infinite linear;
+}
+
+
+#finish {
+    width: 150px;
+    height: 130px;
+    background-image: url(finish.png);
+    background-size: 140px 120px;
+    position: absolute;
+    top: 100px;
+    left: 90%;
+}
+
+@keyframes cactusMov {
+    0% {
+        left: 550px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes firstMov {
+    0% {
+        left: 750px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes secondMov {
+    0% {
+        left: 750px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes fifthMov {
+    0% {
+        left: 950px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes fourthMov {
+    0% {
+        left: 850px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes thirdMov {
+    0% {
+        left: 900px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    10% {
+        top: 140px;
+    }
+    0% {
+        top: 135px;
+    }
+    30% {
+        top: 130px;
+    }
+    40% {
+        top: 100px;
+        
+    }
+    50% {
+        top: 60px;
+        
+    }
+    65% {
+        top: 90px;
+        
+    }
+    70% {
+        top: 93px;
+        
+    }
+    80% {
+        top: 110px;
+    
+    }
+    90% {
+        top: 130px;
+        
+    }
+    100% {
+        top: 150px;
+    }
+}
+
